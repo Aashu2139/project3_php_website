@@ -1,0 +1,53 @@
+
+# here launch 1 ec2 and install LEMP on it 
+    1  yum update -y
+
+    2  sudo amazon-linux-extras install nginx1 
+    3  systemctl enable nginx1
+    4  systemctl enable nginx
+    5  systemctl start  nginx
+    6  service nginx status
+       ------------------------------------------------   
+    7  yum install mariadb-server
+    8  service mariadb-server status
+    9  service mariadb start
+   10  service mariadb status
+       -----------------------------------------------    
+   11  yum install php
+   12  yum install php-fpm
+   13  service php-fpm start
+   14  service php-fpm status
+       -------------------------------------------------
+(LEMP ACTIVELY RUNNING )
+
+# restart all the services once again 
+   
+   15  
+       1 
+         cd ~/usr/share/nginx/html
+       2 
+         mkdir Live_project (saprate folder or in html ) 
+       --------------------------------------------------------------               
+   
+       3 
+         nano index.html
+
+        [
+          <h1> this is Live-project </h1>                          - tag line
+          <a href=register.php> Register to Live-project </a>      - create link 
+        ]
+        -------------------------------------------------------------    
+(ABOVE YOU MENTIONED *register.php)
+  
+       4 
+          nano register.php
+                    
+          so go to (php website 2) and copy the content and paste in to register.php 
+           
+          5 RESTART ALL SERVICES AND RUN IP ADDRESS ON TAB 
+ 
+
+
+
+#----------ERROR----(*now go to troubleshoot file in repository)--------------- 
+

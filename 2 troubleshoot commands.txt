@@ -1,0 +1,21 @@
+
+
+#------------------------------ 403 ERROR------------------------------------
+   1   
+      Go add php and mariadb ports in inbound roules in security group
+
+   2 
+      #  iptables -L (empty here so need to add ports ) 
+      #  sudo iptables -A INPUT -p tcp --dport 80 --syn -m conntrack --ctstate NEW -j ACCEPT
+      #  sudo iptables -A INPUT -p tcp --dport 443 --syn -m conntrack --ctstate NEW -j ACCEPT
+      #  sudo iptables -A INPUT -p tcp --dport 9000 --syn -m conntrack --ctstate NEW -j ACCEPT
+      #  sudo iptables -A INPUT -p tcp --dport 3306 --syn -m conntrack --ctstate NEW -j ACCEPT
+
+  3 
+      still eroor access denied
+      
+      #  chmod -R 777 register.php
+
+#-----paste ip address click registration link---------now your registration page visible----
+ 
+        1  
